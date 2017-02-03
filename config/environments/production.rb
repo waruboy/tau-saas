@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Sendgrid
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { host: 'tau-saas-pm.herokuap.com', protocol: 'https' }
 end
